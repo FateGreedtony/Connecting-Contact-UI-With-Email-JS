@@ -7,7 +7,7 @@ import 'antd/dist/reset.css';
 const { Title } = Typography;
 const { TextArea } = Input;
 
-const App = () => {
+function App() {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
