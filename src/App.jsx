@@ -7,7 +7,7 @@ import 'antd/dist/reset.css';
 const { Title } = Typography;
 const { TextArea } = Input;
 
-const ContactSection = () => {
+const App = () => {
   const [form] = Form.useForm();
   const [loading, setLoading] = useState(false);
 
@@ -132,4 +132,4 @@ const ContactSection = () => {
   );
 };
 
-export default ContactSection;
+export default App;
