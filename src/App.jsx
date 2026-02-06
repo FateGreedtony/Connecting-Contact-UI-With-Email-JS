@@ -37,24 +37,12 @@ function App() {
 
   return (
     <div
-      style={{
-        minHeight: '100vh',
-        background: 'rgba(240, 242, 245, 0.8)',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        padding: '24px',
-      }}
+      className="min-h-screen flex items-center justify-center p-6 bg-gray-400"
     >
       <Card
-        style={{
-          width: '100%',
-          maxWidth: 480,
-          borderRadius: 12,
-          boxShadow: '0 10px 40px rgba(0, 0, 0, 0.2)',
-        }}
+        className="w-full max-w-120 rounded-xl shadow-lg p-8"
       >
-        <Title level={2} style={{ textAlign: 'center', marginBottom: 32 }}>
+        <Title level={2} className="text-center mb-8">
           Contact Us
         </Title>
 
@@ -108,20 +96,14 @@ function App() {
             />
           </Form.Item>
 
-          <Form.Item style={{ marginBottom: 0, marginTop: 24 }}>
+          <Form.Item className="mb-0 mt-6">
             <Button
               type="primary"
               htmlType="submit"
               loading={loading}
               block
               size="large"
-              style={{
-                height: 48,
-                borderRadius: 8,
-                fontWeight: 600,
-                background: 'rgb(24, 144, 255)',
-                border: 'none',
-              }}
+              className="h-12 rounded-lg font-semibold bg-[#1890ff] border-none"
             >
               {loading ? 'Mengirim...' : 'Kirim Pesan'}
             </Button>
